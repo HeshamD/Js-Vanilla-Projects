@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+
+    <!--Styles-->
+
+    <style>
+
+        h1,
+        h2,
+        h3,
+        h4 {
+        letter-spacing: var(--spacing);
+        text-transform: capitalize;
+        line-height: 1.25;
+        margin-bottom: 0.75rem;
+        font-family: var(--ff-primary);
+        }
+
+        h1 {
+        font-size: 3rem;
+        }
+        h2 {
+        font-size: 2rem;
+        }
+        h3 {
+        font-size: 1.25rem;
+        }
+        h4 {
+        font-size: 0.875rem;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 1rem;
+        }
+        h4{
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        main {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        nav{
+            background-color: #fff;
+            height: 3rem;
+            display: grid;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-center{
+            width: 90vw;
+            max-width: 620px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .nav-center h4{
+            margin-bottom: 0;
+            color: hsl(205, 78%, 60%);
+        }
+
+        .nav-links{
+            display: flex;
+        }
+
+        nav a{
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 1rem;
+            color: hsl(205, 86%, 17%);
+            letter-spacing: 0.1rem;
+            margin-right: 2rem;
+        }
+
+        nav a:hover {
+            color: hsl(205, 86%, 17%);
+        }
+        
+
+        main{
+            min-height: calc(100vh - 3rem);
+            display: grid;
+            place-items: center;
+        }
+
+        .container{
+            text-align: center;
+        }
+        
+        .container h2{
+            background-color: #222;
+            color: #fff;
+            padding: 2rem;
+            width: 40rem;
+            border-radius: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .color{
+            color: hsl(205, 78%, 60%);
+        }
+
+        .btn-hero{
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            background: transparent;
+            color:#222;
+            letter-spacing: 0.1rem;
+            display: inline-block;
+            font-weight: 700;
+            transition: all 0.3s linear;
+            border: 2px solid #222;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            padding: 0.75rem 1.25rem;
+        }
+
+        .btn-hero:hover {
+            color: #fff;
+            background: #222;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="nav-center">
+
+                <h4>Color Flipper</h4>
+
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Simple</a>
+                    </li>
+                    <li>
+                        <a href="hex.html">hex</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>        
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>background color: <span class="color"> #1b6aa6 </span></h2>
+            <button class="btn btn-hero" id="btn">CLICK ME</button> <!--two classes btn and btn-hero ,, the id for js-->
+        </div>
+    </main>
+
+    <!--js-->
+
+    <script src="jsfile.js"></script>
+
+</body>
+</html>
